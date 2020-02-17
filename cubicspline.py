@@ -167,3 +167,30 @@ plt.xlabel(r'$x$ (m)', fontsize=20)
 plt.ylabel(r'$N(X)$, N', fontsize=20)
 plt.show()
 
+
+def friction(c, mass, beta):
+	result = []
+	for value in beta:
+		result.append(c * mass * GRAVITY * math.sin(value * 2 * PI / 180) / (1 + c))
+	return np.asarray(result)
+
+
+plt.plot(x, friction(c, MASS_BALL, beta()))
+plt.grid()
+plt.xlabel(r'$x$ (m)', fontsize=20)
+plt.ylabel(r'$friction$', fontsize=20)
+plt.show()
+beta = beta()
+norm = normal_force(MASS_BALL, beta, acceleration)
+friction = friction(c, MASS_BALL, beta)
+print(friction)
+friction_normal = np.asarray([abs(friction[i]/norm[i]) for i in range(len(friction))])
+plt.plot(x, friction_normal)
+plt.grid()
+plt.xlabel(r'$x$ (m)', fontsize=20)
+plt.ylabel(r'$|f/N|$', fontsize=20)
+plt.gca().set_ylim([0, 0.4])
+plt.show()
+
+print(min(normal))
+
