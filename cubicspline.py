@@ -141,6 +141,7 @@ plt.xlabel(r'$x$ (m)', fontsize=20)
 plt.ylabel(r'$v(x)$ m/s', fontsize=20)
 plt.show()
 
+
 def centripetal_acceleration(velocity, curve):
 	result = []
 	for i in range(len(velocity)):
@@ -174,6 +175,25 @@ def friction(c, mass, beta):
 	return np.asarray(result)
 
 
+def horizontal_velocity(beta, velocity):
+	v_avg = [0]
+	for i in range(1, len(beta)):
+		v_avg.append(1/2 * (v_avg[i - 1] + instant_horizontal_velocity(beta[i], velocity[i])))
+	return np.asarray(v_avg)
+
+
+def time(beta, velocity):
+	time = [0]
+	v_avg = horizontal_velocity(beta, velocity)
+	for i in range(1, 1401):
+		time.append(((1/1000) / v_avg[i]) + time[i - 1])
+	return np.asarray(time)
+
+
+def instant_horizontal_velocity(beta, velocity):
+	return velocity * math.cos(beta * 2 * PI / 180)
+
+
 plt.plot(x, friction(c, MASS_BALL, beta()))
 plt.grid()
 plt.xlabel(r'$x$ (m)', fontsize=20)
@@ -182,7 +202,7 @@ plt.show()
 beta = beta()
 norm = normal_force(MASS_BALL, beta, acceleration)
 friction = friction(c, MASS_BALL, beta)
-print(friction)
+
 friction_normal = np.asarray([abs(friction[i]/norm[i]) for i in range(len(friction))])
 plt.plot(x, friction_normal)
 plt.grid()
@@ -191,22 +211,15 @@ plt.ylabel(r'$|f/N|$', fontsize=20)
 plt.gca().set_ylim([0, 0.4])
 plt.show()
 
-print(min(normal))
 
-def t(x, y, c):
-	t = [0]
-	for n in range(1,1401):
-		t.append(instant_t(x, y, c, n))
-	return np.asarray(t)
-
-def instant_t(x, y, c, n):
-	v_xn_prev = v(y, x, c)[n-1] * np.cos(beta()[n-1]*PI/180)
-	v_xn = v(y, x, c)[n] * np.cos(beta()[n]*PI/180)
-	v_xn_avg = (1/2) * (v_xn_prev + v_xn)
-	return dx/v_xn_avg
-
-plt.plot(t(x, y, c), x)
+plt.plot(time(beta=beta, velocity=velocity), x)
 plt.grid()
 plt.xlabel(r'$t$ (s)', fontsize=20)
-plt.ylabel(r'$x$ m', fontsize=20)
+plt.ylabel(r'$x$ (m)', fontsize=20)
+plt.show()
+
+plt.plot(time(beta=beta, velocity=velocity), horizontal_velocity(beta=beta, velocity=velocity))
+plt.grid()
+plt.xlabel(r'$t$ (s)', fontsize=20)
+plt.ylabel(r'$v(t)$ (m/s)', fontsize=20)
 plt.show()
