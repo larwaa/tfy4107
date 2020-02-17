@@ -34,6 +34,11 @@ from scipy.interpolate import CubicSpline
 from scipy.constants import g as GRAVITY, pi as PI
 import math
 
+# Constants
+MASS_BALL = 30 / 1000 # kilograms
+MASS_FILLED_CIRCLE = 27 / 1000# kilograms
+MASS_EMPTY_CIRCLE = 13 / 1000 # kilograms
+
 # Horisontal avstand mellom festepunktene er 200 mm
 h = 200
 xfast=np.asarray([0,h,2*h,3*h,4*h,5*h,6*h,7*h])
@@ -135,3 +140,30 @@ plt.grid()
 plt.xlabel(r'$x$ (m)', fontsize=20)
 plt.ylabel(r'$v(x)$ m/s', fontsize=20)
 plt.show()
+
+
+def centripetal_acceleration(velocity, curve):
+	result = []
+	for i in range(len(velocity)):
+		result.append(curve[i] * (velocity[i]**2))
+	return np.asarray(result)
+
+
+def normal_force(mass, beta, acceleration):
+	result = []
+	for i in range(len(acceleration)):
+		result.append(mass * (GRAVITY * math.cos(beta[i] * 2 * PI / 180) + acceleration[i]))
+	return np.asarray(result)
+
+
+# BEGIN NORMAL FORCE PLOT
+velocity = v(y, x, c)
+curve = curve(d2y, dy)
+acceleration = centripetal_acceleration(velocity, curve)
+normal = normal_force(MASS_BALL, beta(), acceleration)
+plt.plot(x, normal)
+plt.grid()
+plt.xlabel(r'$x$ (m)', fontsize=20)
+plt.ylabel(r'$N(X)$, N', fontsize=20)
+plt.show()
+
