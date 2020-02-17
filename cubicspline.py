@@ -135,3 +135,21 @@ plt.grid()
 plt.xlabel(r'$x$ (m)', fontsize=20)
 plt.ylabel(r'$v(x)$ m/s', fontsize=20)
 plt.show()
+
+def t(x, y, c):
+	t = [0]
+	for n in range(1,1401):
+		t.append(instant_t(x, y, c, n))
+	return np.asarray(t)
+
+def instant_t(x, y, c, n):
+	v_xn_prev = v(y, x, c)[n-1] * np.cos(beta()[n-1]*PI/180)
+	v_xn = v(y, x, c)[n] * np.cos(beta()[n]*PI/180)
+	v_xn_avg = (1/2) * (v_xn_prev + v_xn)
+	return dx/v_xn_avg
+
+plt.plot(t(x, y, c), x)
+plt.grid()
+plt.xlabel(r'$t$ (s)', fontsize=20)
+plt.ylabel(r'$x$ m', fontsize=20)
+plt.show()
