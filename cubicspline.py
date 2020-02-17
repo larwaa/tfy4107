@@ -31,7 +31,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import CubicSpline
-from scipy.constants import gravitational_constant as GRAVITY, pi as PI
+from scipy.constants import g as GRAVITY, pi as PI
 import math
 
 # Horisontal avstand mellom festepunktene er 200 mm
@@ -88,10 +88,6 @@ plt.show()
 #baneform.savefig("baneform.png", bbox_inches='tight')
 
 
-def v_y(y, c):
-	return math.sqrt(2 * GRAVITY * (yfast[0] - y) / (1 + c))
-
-
 def beta():
 	return np.asarray([math.atan(derivative)/(2 * PI) * 180 for derivative in dy])
 
@@ -119,3 +115,23 @@ plt.xlabel(r'$x$(m)', fontsize=20)
 plt.ylabel(r'$\kappa$(x) (1/m)')
 plt.show()
 # END KRUMNINGSPLOT
+
+
+def v(y, x, c):
+	a = []
+	for i in range(len(x)):
+		a.append(instant_v(y, y[i], c))
+	return np.asarray(a)
+
+
+def instant_v(y, y_x, c):
+	return math.sqrt(2 * GRAVITY * (y[0] - y_x) / (1 + c))
+
+
+print(GRAVITY)
+c = 2/5
+plt.plot(x, v(y, x, c))
+plt.grid()
+plt.xlabel(r'$x$ (m)', fontsize=20)
+plt.ylabel(r'$v(x)$ m/s', fontsize=20)
+plt.show()
