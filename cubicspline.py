@@ -119,8 +119,8 @@ plt.show()
 
 def v(y, x, c):
 	a = []
-	for i in range(len(x)):
-		a.append(instant_v(y, y[i], c))
+	for instant_y in y:
+		a.append(instant_v(y, instant_y, c))
 	return np.asarray(a)
 
 
