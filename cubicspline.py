@@ -31,6 +31,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import CubicSpline
+from scipy.constants import gravitational_constant as GRAVITY, pi as PI
+import math
 
 # Horisontal avstand mellom festepunktene er 200 mm
 h = 200
@@ -86,8 +88,34 @@ plt.show()
 #baneform.savefig("baneform.png", bbox_inches='tight')
 
 
-print('Antall forsøk',attempts)
-print('Festepunkthøyder (m)',yfast)
-print('Banens høyeste punkt (m)',np.max(y))
+def v_y(y, c):
+	return math.sqrt(2 * GRAVITY * (yfast[0] - y) / (1 + c))
 
-print('NB: SKRIV NED festepunkthøydene når du/dere er fornøyd med banen!')
+
+def beta():
+	return np.asarray([math.atan(derivative)/(2 * PI) * 180 for derivative in dy])
+
+# def v_x(x, c):
+	# return math.sqrt(2 * GRAVITY * (yfast[0] - y(x)) / (1 + c))
+
+
+# BETA FØRSTE PLOT
+plt.plot(x, beta())
+plt.grid()
+plt.xlabel('$x$ (m)', fontsize=20)
+plt.ylabel(r'$\beta$ (grader)', fontsize=20)
+plt.show()
+# END BETA FØRSTE PLOT
+
+
+# START KRUMNINGSPLOT
+def curve(d2y, dy):
+	return d2y/(1 + dy ** 2) ** (3/2)
+
+
+plt.plot(x, curve(d2y, dy))
+plt.grid()
+plt.xlabel(r'$x$(m)', fontsize=20)
+plt.ylabel(r'$\kappa$(x) (1/m)')
+plt.show()
+# END KRUMNINGSPLOT
