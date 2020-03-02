@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46b6d3e9-4d73-4bea-a185-56ebb5911102" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/velocity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1580736204868" duration="161000" />
       <workItem from="1581945458715" duration="6480000" />
       <workItem from="1581954351583" duration="577000" />
-      <workItem from="1583162877909" duration="297000" />
+      <workItem from="1583162877909" duration="1364000" />
     </task>
     <servers />
   </component>
@@ -113,10 +112,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="623" y="238" key="search.everywhere.popup" timestamp="1583162921515">
+    <state x="520" y="48" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583163982088">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="238" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583162921515" />
+    <state x="520" y="48" width="869" height="989" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583163982088" />
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1583163268253">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583163268253" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1581954842710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib as plt
 
-CUTOFF = 0.5
+CUTOFF = 0.4
 
 
 def csv_to_list(csv):
@@ -11,10 +11,10 @@ def csv_to_list(csv):
         result.append(tabs)
         for line in file[1:]:
             split_line = line.split(",")
-            time = split_line[0]
-            x = split_line[1]
-            y = split_line[2]
-            velocity = split_line[3]
+            time = float(split_line[0])
+            x = float(split_line[1])
+            y = float(split_line[2])
+            velocity = float(split_line[3])
             result.append(time, x, y, velocity)
     return result
 
