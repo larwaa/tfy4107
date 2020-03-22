@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab475b3b-a518-459d-8cb2-52b91180feeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TFY4107.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TFY4107.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beta_plot.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cubicspline.py" beforeDir="false" afterPath="$PROJECT_DIR$/cubicspline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curve_plot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friction_normal_plot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friction_plot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/normal_plot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/track_plot.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/track_plot.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/velocity.py" beforeDir="false" afterPath="$PROJECT_DIR$/velocity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/velocity_plot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/velocity_time_plot.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.cubicspline">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TFY4107" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,9 +94,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="velocity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TFY4107" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/velocity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.cubicspline" />
+        <item itemvalue="Python.velocity" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584710306106</updated>
       <workItem from="1584710310158" duration="2487000" />
-      <workItem from="1584884888192" duration="4217000" />
+      <workItem from="1584884888192" duration="16447000" />
     </task>
     <servers />
   </component>
@@ -113,22 +139,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1584889346089">
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1584901583629">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346089" />
-    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1584889346088">
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1584901583629" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1584901583628">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346088" />
-    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1584889346088">
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1584901583628" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1584901583627">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346088" />
-    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1584889346089">
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1584901583627" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1584901583629">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346089" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1584901583629" />
     <state x="461" y="239" key="SettingsEditor" timestamp="1584710366003">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -137,12 +163,12 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="531" y="163" width="858" height="873" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584711258199" />
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1584887351239">
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1584895597595">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584887351239" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584895597595" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1584889346081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1584901583622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

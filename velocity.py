@@ -3,22 +3,25 @@ import statistics
 CUTOFF = 1
 
 
-def csv_to_list(csv):
+def csv_to_list(csv, velocity=True):
     result = []
     with open(csv, "r") as file:
         file.readline()
-        tabs = file.readline().split(",")
+        tabs = file.readline().strip().split(",")
         result.append(tabs)
         for line in file.readlines()[2:]:
             split_line = line.split(",")
             time = float(split_line[0].strip())
             x = float(split_line[1].strip())
             y = float(split_line[2].strip())
-            try:
-                velocity = float(split_line[3].strip())
-                result.append([time, x, y, velocity])
-            except ValueError:
-                pass
+            if velocity:
+                try:
+                    velocity = float(split_line[3].strip())
+                    result.append([time, x, y, velocity])
+                except ValueError:
+                    pass
+            else:
+                result.append([time, x, y])
     return result
 
 
