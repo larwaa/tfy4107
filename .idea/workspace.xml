@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46b6d3e9-4d73-4bea-a185-56ebb5911102" name="Default Changelist" comment="">
+    <list default="true" id="ab475b3b-a518-459d-8cb2-52b91180feeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TFY4107.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TFY4107.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cubicspline.py" beforeDir="false" afterPath="$PROJECT_DIR$/cubicspline.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TFY4107" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>beta()</find>
-    </findStrings>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
-  <component name="ProjectId" id="1YZgPz2WbxPjaIwIxRofMzFnlHl" />
-=======
-  <component name="ProjectId" id="1YZvLao3yimYxWKdg4vtNgyNZit" />
->>>>>>> fea7c4f370af9416d364937053f8bb278ca03070
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ZOVoxQmRG60Bl6ZxkMwdy8m4lj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -68,7 +66,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cubicspline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cubicspline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TFY4107" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,21 +99,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="46b6d3e9-4d73-4bea-a185-56ebb5911102" name="Default Changelist" comment="" />
-      <created>1580736203661</created>
+      <changelist id="ab475b3b-a518-459d-8cb2-52b91180feeb" name="Default Changelist" comment="" />
+      <created>1584710306106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580736203661</updated>
-      <workItem from="1580736204868" duration="161000" />
-      <workItem from="1581945458715" duration="6480000" />
-<<<<<<< HEAD
-      <workItem from="1581954351583" duration="927000" />
-      <workItem from="1581972215681" duration="20000" />
-      <workItem from="1583155511901" duration="1253000" />
-=======
-      <workItem from="1581954351583" duration="577000" />
-      <workItem from="1583162877909" duration="1364000" />
->>>>>>> fea7c4f370af9416d364937053f8bb278ca03070
+      <updated>1584710306106</updated>
+      <workItem from="1584710310158" duration="2487000" />
+      <workItem from="1584884888192" duration="4217000" />
     </task>
     <servers />
   </component>
@@ -123,27 +113,36 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-<<<<<<< HEAD
-    <state x="461" y="239" key="SettingsEditor" timestamp="1583155660835">
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1584889346089">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="461" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1583155660835" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346089" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1584889346088">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346088" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1584889346088">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346088" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1584889346089">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1584889346089" />
+    <state x="461" y="239" key="SettingsEditor" timestamp="1584710366003">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="461" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1584710366003" />
+    <state x="531" y="163" width="858" height="873" key="find.popup" timestamp="1584711258199">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="531" y="163" width="858" height="873" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584711258199" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1584887351239">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584887351239" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1583155690454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1584889346081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-=======
-    <state x="520" y="48" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583163982088">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="520" y="48" width="869" height="989" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583163982088" />
-    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1583163268253">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583163268253" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TFY4107$cubicspline.coverage" NAME="cubicspline Coverage Results" MODIFIED="1581954842710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
->>>>>>> fea7c4f370af9416d364937053f8bb278ca03070
 </project>
